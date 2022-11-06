@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-gradient-color: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+    --main-bg-color: hsl(229, 57%, 11%);
+    --main-cards-color: hsl(228, 56%, 26%);
+    --main-num-color: hsl(243, 100%, 93%);
+    --main-text-color: hsl(229, 7%, 55%);
+    --main-font-size: 14px;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
