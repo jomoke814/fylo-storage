@@ -122,10 +122,23 @@ h1,p {
     padding: 15px;
     position: absolute;
     right: 15%;
-    top: 15%;
+    top: 14%;
+    width: 150px;
 }
 
-button span {
+#range::before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 20px;
+    height: 40px;
+    right: 0;
+    bottom: 0;
+    transform: skew(180deg, 50deg);
+}
+
+
+#range span {
     color: var(--main-bg-color);
     font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
