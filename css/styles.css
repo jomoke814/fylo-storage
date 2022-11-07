@@ -7,11 +7,11 @@
 }
 
 :root {
-    --main-gradient-color: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+    --main-gradient-color: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
     --main-bg-color: hsl(229, 57%, 11%);
     --main-cards-color: hsl(228, 56%, 26%);
-    --main-num-color: hsl(243, 100%, 93%);
-    --main-text-color: hsl(229, 7%, 55%);
+    --main-text-color: hsl(243, 100%, 93%);
+    --main-num-color: hsl(229, 7%, 55%);
     --main-font-size: 14px;
 }
 
@@ -23,6 +23,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+h1 {
+    font-size: 1rem;
+}
+
+h1,p {
+    color: var(--main-text-color);
+}
+
+.num {
+    color: #fff;
 }
 
 .icons {
@@ -37,20 +49,25 @@ body {
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     background-image: url('../images/bg-desktop.png');
     background-repeat: no-repeat;
-    max-width: 1440px;
-    padding: 150px;
-    margin: 50px;
+    background-size: contain;
+    background-position: bottom;
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr);
+    justify-content: stretch;
+    justify-items: center;
+    margin: 10px;
+    padding: 50px;
+    height: 100vh;
+    width: 100vw;
 }
 
 .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    height: 200px;
+    margin-top: 30px;
 }
 
 .card1{
@@ -60,6 +77,7 @@ body {
     background-color: var(--main-cards-color);
     padding: 30px;
     width: 350px;
+    height: 200px;
 }
 
 .card2 {
@@ -67,6 +85,61 @@ body {
     background-color: var(--main-cards-color);
     border-radius: 10px;
     padding: 20px;
+    height: 175px;
+    width: 500px;
+    margin-top: 25px;
+}
+
+.card2 .range-container {
+    background-color: var(--main-bg-color);
+    border: 2px;
+    border-radius: 10px;
+    height: 20px;
+}
+
+.range-bar {
+    background: var(--main-gradient-color);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 20px;
+    width: 75%;
+    margin: 10px 0;
+}
+
+.bar-end {
+    background: var(--main-text-color);
+    border-radius: 20px;
+    height: 20px;
+    width: 20px;
+}
+
+#range {
+    background-color: #fff;
+    color: var(--main-num-color);
+    border: 1px;
+    border-radius: 10px;
+    padding: 15px;
+    position: absolute;
+    right: 15%;
+    top: 15%;
+}
+
+button span {
+    color: var(--main-bg-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.Gb {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Gb p {
+    color: #fff;
+    font-weight: bold;
 }
 
 .attribution {
