@@ -10,8 +10,8 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 ### links
-- Live preview:
-- Solution URL: 
+- Live preview: https://jomoke814.github.io/fylo-storage/
+- Solution URL: https://github.com/jomoke814/fylo-storage
 ### Desired Outcome screenshots
 ![desired outcome Desktop](./images/desktop-design.jpg)
 ![desired outcome Mobile](./images/mobile-design.jpg)
